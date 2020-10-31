@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/trendingRepoFragment">
+
+    <fragment
+        android:id="@+id/trendingRepoFragment"
+        android:name="com.androidiots.nayan_assignment.ui.trendingrepo.TrendingRepoFragment"
+        android:label="TrendingRepoFragment" >
+        <action
+            android:id="@+id/showRepoDetail"
+            app:destination="@id/repoDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repoDetailFragment"
+        android:name="com.androidiots.nayan_assignment.ui.trendingrepo.RepoDetailFragment"
+        android:label="TrendingRepoFragment" >
+    </fragment>
+</navigation>
